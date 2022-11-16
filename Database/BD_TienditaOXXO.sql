@@ -38,7 +38,10 @@ CREATE TABLE `items` (
 ALTER TABLE `items`
   ADD PRIMARY KEY (`id_item`);
   
-  
+--
+-- Estructura de tabla para la tabla `clientes`
+--
+
   CREATE TABLE `clientes` (
   `cl_rut` int(8) NOT NULL,
   `cl_dv_rut` varchar(1) NOT NULL,
@@ -48,6 +51,10 @@ ALTER TABLE `items`
   
 ALTER TABLE 'clientes'
   ADD PRIMARY KEY ('cl_rut');
+  
+  
+  
+  
   
 COMMIT;
 
