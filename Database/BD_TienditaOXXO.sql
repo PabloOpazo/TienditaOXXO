@@ -34,15 +34,21 @@ CREATE TABLE `items` (
   `stock_item` int(6) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Índices para tablas volcadas
---
 
---
--- Indices de la tabla `items`
---
 ALTER TABLE `items`
   ADD PRIMARY KEY (`id_item`);
+  
+  
+  CREATE TABLE `clientes` (
+  `cl_rut` int(8) NOT NULL,
+  `cl_dv_rut` varchar(1) NOT NULL,
+  `cl_nombres` varchar(50) NOT NULL,
+  `cl_direccion` varchar(60) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  
+ALTER TABLE 'clientes'
+  ADD PRIMARY KEY ('cl_rut');
+  
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
