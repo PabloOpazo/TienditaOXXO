@@ -44,16 +44,10 @@ CREATE TABLE `cliente` (
 CREATE TABLE `producto` (
   `id_producto` int(3) NOT NULL,
   `nombre_producto` varchar(40) NOT NULL,
+  `detalle_producto` varchar(10),
   `precio_producto` int(5) NOT NULL DEFAULT 0,
   `stock_producto` int(9) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Volcado de datos para la tabla `producto`
---
-
-INSERT INTO `producto` (`id_producto`, `nombre_producto`, `precio_producto`, `stock_producto`) VALUES
-(1, 'xd', 2, 5);
 
 --
 -- Índices para tablas volcadas
